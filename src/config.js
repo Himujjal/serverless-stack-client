@@ -6,7 +6,7 @@ const dev = {
   },
   apiGateway: {
     REGION: "ap-south-1",
-    URL: "https://jyt1csj57i.execute-api.ap-south-1.amazonaws.com/dev",
+    URL: "https://yn9ct9ito6.execute-api.ap-south-1.amazonaws.com/dev",
   },
   cognito: {
     REGION: "ap-south-1",
@@ -24,7 +24,7 @@ const prod = {
   },
   apiGateway: {
     REGION: "ap-south-1",
-    URL: "https://jyt1csj57i.execute-api.ap-south-1.amazonaws.com/prod",
+    URL: "https://yn9ct9ito6.execute-api.ap-south-1.amazonaws.com/prod",
   },
   cognito: {
     REGION: "ap-south-1",
