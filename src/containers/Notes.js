@@ -1,11 +1,11 @@
 import React, { useRef, useState, useEffect } from "react";
-import { useHistory, useParams } from "react-router-dom";
-import { FormGroup, FormControl, ControlLabel } from "react-bootstrap";
 import { API, Storage } from "aws-amplify";
-import { onError } from "../libs/errorLib";
+import { useParams, useHistory } from "react-router-dom";
+import { FormGroup, FormControl, ControlLabel } from "react-bootstrap";
 import LoaderButton from "../components/LoaderButton";
-import config from "../config";
+import { onError } from "../libs/errorLib";
 import { s3Upload } from "../libs/awsLib";
+import config from "../config";
 import "./Notes.css";
 
 export default function Notes() {

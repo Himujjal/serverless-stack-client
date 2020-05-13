@@ -37,7 +37,7 @@ export function onError(error) {
     errorInfo.url = error.config.url;
   }
 
-  // logError(error, errorInfo);
+  logError(error, errorInfo);
 
   alert(message);
 }
