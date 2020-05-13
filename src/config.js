@@ -1,7 +1,7 @@
 export default {
   s3: {
     REGION: "ap-south-1",
-    BUCKET: "notes-app-api-tut-dev-serverlessdeploymentbucket-abj8f2sz0n8s",
+    BUCKET: "notes-app-uploads-himu",
   },
   apiGateway: {
     REGION: "ap-south-1",
@@ -13,4 +13,5 @@ export default {
     APP_CLIENT_ID: "52bm38e39443ala2laibqtakea",
     IDENTITY_POOL_ID: "ap-south-1:caf36977-2df8-49a8-b8a5-336e4cc42f4d",
   },
+  MAX_ATTACHMENT_SIZE: 5000000,
 };
