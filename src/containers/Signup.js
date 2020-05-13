@@ -5,7 +5,7 @@ import {
   HelpBlock,
   FormGroup,
   FormControl,
-  ControlLabel,
+  ControlLabel
 } from "react-bootstrap";
 import LoaderButton from "../components/LoaderButton";
 import { useAppContext } from "../libs/contextLib";

@@ -18,7 +18,7 @@ export default function Settings() {
 
   function billUser(details) {
     return API.post("notes", "/billing", {
-      body: details,
+      body: details
     });
   }
 
@@ -33,7 +33,7 @@ export default function Settings() {
     try {
       await billUser({
         storage,
-        source: token.id,
+        source: token.id
       });
 
       alert("Your card has been charged successfully!");

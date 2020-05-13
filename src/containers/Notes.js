@@ -55,7 +55,7 @@ export default function Notes() {
 
   function saveNote(note) {
     return API.put("notes", `/notes/${id}`, {
-      body: note,
+      body: note
     });
   }
 
@@ -82,7 +82,7 @@ export default function Notes() {
 
       await saveNote({
         content,
-        attachment: attachment || note.attachment,
+        attachment: attachment || note.attachment
       });
       history.push("/");
     } catch (e) {
@@ -125,7 +125,7 @@ export default function Notes() {
             <FormControl
               value={content}
               componentClass="textarea"
-              onChange={(e) => setContent(e.target.value)}
+              onChange={e => setContent(e.target.value)}
             />
           </FormGroup>
           {note.attachment && (

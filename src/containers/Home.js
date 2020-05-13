@@ -7,6 +7,7 @@ import { useAppContext } from "../libs/contextLib";
 import { onError } from "../libs/errorLib";
 import "./Home.css";
 
+
 export default function Home() {
   const [notes, setNotes] = useState([]);
   const { isAuthenticated } = useAppContext();
@@ -76,7 +77,9 @@ export default function Home() {
     return (
       <div className="notes">
         <PageHeader>Your Notes</PageHeader>
-        <ListGroup>{!isLoading && renderNotesList(notes)}</ListGroup>
+        <ListGroup>
+          {!isLoading && renderNotesList(notes)}
+        </ListGroup>
       </div>
     );
   }

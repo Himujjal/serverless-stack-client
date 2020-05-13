@@ -7,9 +7,7 @@ export function initSentry() {
     return;
   }
 
-  Sentry.init({
-    dsn: "https://5f83aa2e21064e47bab8a1f308f940eb@sentry.io/5185720",
-  });
+  Sentry.init({ dsn: "https://5f83aa2e21064e47bab8a1f308f940eb@sentry.io/5185720" });
 }
 
 export function logError(error, errorInfo = null) {
